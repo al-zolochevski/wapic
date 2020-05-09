@@ -1,0 +1,29 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    	Web dev: Aleksei Zolochevskiy
+    	instagram: @zolochevskiy
+    	From: Kharkiv, UA
+
+    	Web dev: Yaroslav Juravlev
+    	instagram: @YarikZhuravlev
+    	From: Kharkiv, UA
+
+# THANKS
+
+    	(First) Fronted dev: Yaroslav Juravlev
+    	instagram: @YarikZhuravlev
+    	From: Kharkiv, UA
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5,
+    jQuery,  sass, js plugins, gulp
+
+
+/* SITE */
+	Language: English
+	Doctype: HTML5
+	IDE: WebStorm, Visual Studio Code, FileZilla, Photoshop, Illustrator
