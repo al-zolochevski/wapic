@@ -1,0 +1,21 @@
+@import "vendor/reset";
+@import "vendor/include-media";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
+
+
+
+//variables
+
+//Fonts
+$Merriweather: 'Merriweather', serif;
+$Motserrat: 'Montserrat', sans-serif;
+$Roboto: 'Roboto', sans-serif;
+
+// Colors
+$dark: #000;
+$white: #fff;
+$ocean-headers: #0f5f5c;
+$ocean-text: #83a7a5;
