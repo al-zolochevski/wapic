@@ -11,30 +11,35 @@
 
 <body>
 
-<header>
-    <div class="container">
-        <div class="header-wrapper">
-            <div class="info">
-                <a class="info-logo" href="#">wapik</a>
-                <a class="info-number" href="#">
-                    <img src="img/ico-phone.png" alt="icon phone">
-                    <span>+62 202 555 0117</span>
-                </a>
-            </div>
-            <nav class="navigation">
-                <ul class="navigation-list">
-                    <li><a class="navigation-link" href="#">Home</a></li>
-                    <li><a class="navigation-link" href="#">About us</a></li>
-                    <li><a class="navigation-link" href="#">Pricing</a></li>
-                    <li><a class="navigation-link" href="#">Contact us</a></li>
-                    <li><a class="navigation-link" href="#">Get started</a></li>
-                </ul>
-            </nav>
-        </div>
-    </div>
-</header>
+
 
 <div id="wrapper">
+    <header class="header">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="info">
+                    <a class="info-logo" href="#">
+                        <img src="img/logo.png" alt="logo-wapik">
+                    </a>
+                    <div class="info-number" href="#">
+                        <img src="img/ico-phone.png" alt="icon phone">
+                        <span>+62 202 555 0117</span>
+                    </div>
+                </div>
+                <button class="burger"></button>
+                <nav class="navigation">
+                    <ul class="navigation-list">
+                        <li><a class="navigation-link" href="#">Home</a></li>
+                        <li><a class="navigation-link" href="#">About us</a></li>
+                        <li><a href="#pricing" class="navigation-link" href="#">Pricing</a></li>
+                        <li><a class="navigation-link" href="#">Contact us</a></li>
+                        <li><a class="navigation-link btn-start" href="#">Get started</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
     <main>
         <section class="primary-section">
             <div class="primary-wrapper">
@@ -42,27 +47,16 @@
                     <div class="primary-title">
                         <h1>Welcome to Wapik</h1>
                     </div>
-                    <a class="primary-subtitle">
+                    <p class="primary-subtitle">
                         Wapik is multipurpose template, with modern and smart design. Wapik is perfect template for you!
-                    </a>
-                    <div class="defaut-btn">
-                        <a href="#">learn more</a>
+                    </p>
+                    <div class="primary-btn-wrapper">
+                        <a class="btn primary-btn" href="#">learn more</a>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="info-section">
-            <div class="container">
-                <div class="info-text">
-                    <h2>Built with High Attention to Details</h2>
-                    <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo
-                        sit amet risus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean
-                        lacinia bibendum nulla sed consectetur. Maecenas sed diam eget risus varius blandit sit amet non
-                        magna. Vestibulum id ligula porta felis euismod semper. Integer posuere erat a ante venenatis
-                        dapibus posuere velit aliquet. Donec id elit non mi porta gravida at eget metus.</p>
-                </div>
-            </div>
-        </section>
+        
         <section class="info-section">
             <div class="container">
                 <div class="info-text">
@@ -83,7 +77,7 @@
                 </div>
             </div>
         </section>
-        <section class="pricing-section">
+        <section id="pricing" class="pricing-section">
             <div class="container">
                 <div class="title">
                     <h2>Pricing & Plan</h2>

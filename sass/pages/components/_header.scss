@@ -1,20 +1,91 @@
 @import "sass/base";
+@import "burger";
 
+.header {
+    position: relative;
+    z-index: 1;
+}
 
-.header-wrapepr {
+.header-wrapper {
     display: flex;
     justify-content: space-between;
+    padding: 30px 0;
+    border-bottom: 1px solid #678e8e;
+
+    .info {
+        display: flex;
+        align-items: center;
+
+        &-logo {
+
+        }
+
+        &-number {
+            font-family: $Motserrat;
+            font-size: 13px;
+            font-weight: 500;
+            color: $white;
+            padding: 0 0 0 25px;
+            margin: 0 0 0 25px;
+            border-left: 1px solid #678e8e;
+        }
+    }
 }
 
 .navigation {
     &-list {
         display: flex;
+        transition: .3s;
+        @include media("<1024px") {
+            position: absolute;
+            right: -100vw;
+            flex-direction: column;
+            max-width: 240px;
+            top: 85px;
+            min-height: 240px;
+        }
+
+        li:not(:last-child) {
+            padding: 0 30px 0 0;
+            @include media("<1024px") {
+                padding: 0 0 15px 0;
+            }
+        }
+
+        &.active {
+            max-width: 240px;
+            top: 85px;
+            right: 0;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: #fff;
+            opacity: 0.8;
+            padding: 40px;
+        }
+    }
+
+    .btn-start {
+        padding: 10px;
+        background: #6a8080;
+        border-radius: 4px;
+        @include media("<1024px") {
+            background: inherit;
+        }
     }
 
     &-link {
+        opacity: .8;
+        transition: .4s ease-in-out;
         color: $white;
         text-transform: uppercase;
         text-decoration: none;
-        padding: 0 10px 0 0;
+        @include media("<1024px") {
+            color: $dark;
+        }
+
+        &:hover {
+            opacity: 1;
+        }
     }
 }

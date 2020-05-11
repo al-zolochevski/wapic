@@ -1,0 +1,16 @@
+.btn {
+    padding: 15px 25px;
+    display: inline-flex;
+    background-color: #83a7a5;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: $Motserrat;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 2px;
+    transition: background-color .3s ease-out, opacity .3s ease-out;
+
+    &:hover {
+        background-color: #6fb048;
+    }
+}
