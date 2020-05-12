@@ -20,3 +20,10 @@ function animateBurger() {
     $('.burger').toggleClass('open');
     $(".navigation-list").toggleClass("active");
 }
+
+$(window).resize(function () {
+    if ($(window).width() > 1023) {
+        $('.burger').removeClass('open');
+        $(".navigation-list").removeClass("active");
+    }
+});

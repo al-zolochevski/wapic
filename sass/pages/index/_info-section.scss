@@ -1,0 +1,70 @@
+.info-section {
+    padding: 65px 0;
+    background-color: #eef1ec;
+    font-size: 14px;
+    font-family: $Roboto;
+
+    @include media("<tablet") {
+        padding: 45px 0;
+    }
+
+    @include media(">=1200px") {
+        position: relative;
+        padding: 165px 0;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+
+        @include media("<tablet") {
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+        }
+    }
+
+    .text-holder {
+        text-align: left;
+        @include media("<tablet") {
+            text-align: center;
+        }
+    }
+
+    .info-text {
+        max-width: 515px;
+        line-height: 1.5;
+    }
+
+    .map-holder {
+        width: 50%;
+        position: relative;
+        margin: 0 -15px 0 0;
+
+        @include media("<tablet") {
+            width: 100%;
+            margin: 35px 0 0;
+        }
+
+        @include media(">=1200px") {
+            position: static;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .img-holder {
+        max-width: 750px;
+
+        @include media(">=1200px") {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 45%;
+        }
+    }
+}

@@ -1,0 +1,96 @@
+.responsive {
+
+    &-section {
+        background: #eef1ec;
+        padding: 75px 0 0;
+
+        .info-text {
+            padding: 0 0 20px;
+        }
+
+        .cols-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .col-1 {
+            margin-bottom: -5px;
+            padding: 0 90px 0 0;
+
+            .img-wrapper {
+                img {
+                    @include media("<1024px") {
+                        width: 400px;
+                    }
+                    @include media("<768px") {
+                        width: 300px;
+                    }
+                    @include media("<740px") {
+                        display: none;
+                    }
+                }
+            }
+
+            @include media("<1024px") {
+                padding: 0 40px 0 0;
+            }
+
+            @include media("<768px") {
+                padding: 0 20px 0 0;
+            }
+        }
+
+        .col-2 {
+            color: #83a7a5;
+            @include media("<768px") {
+                font-size: 25px;
+            }
+
+            .responsive-subtitle {
+                font-size: 32px;
+                color: #0f5f5c;
+                font-weight: 300;
+                padding: 0 0 15px;
+                @include media("<768px") {
+                    padding: 0 0 9px;
+                }
+            }
+
+            .responsive-text {
+                font-size: 14px;
+                font-weight: 300;
+                padding: 0 0 15px;
+                line-height: 1.5;
+            }
+
+            .responsive-advantages {
+                .advantage {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    padding: 0 0 10px;
+
+                    &-img {
+                        width: 26px;
+                        height: 26px;
+                        margin: 0 10px 0 0;
+
+                        svg {
+                            width: 26px;
+                            height: 26px;
+                            fill: #83a7a5;
+                        }
+                    }
+
+                    &-text {
+                        font-size: 14px;
+                        font-weight: 300;
+                    }
+                }
+            }
+        }
+    }
+
+
+}
