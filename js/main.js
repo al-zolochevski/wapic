@@ -38,9 +38,11 @@ $(window).scroll(function () {
 
 
 //accordion
-if (window.outerWidth < 767) {
-    $('.accordion').on('click', '.heading', function (e) {
+
+$('.accordion').on('click', '.heading', function (e) {
+    if (window.outerWidth < 767) {
         e.preventDefault();
         $(this).next('.accordion-panel').not(':animated').slideToggle();
-    });
-}
+    }
+});
+
