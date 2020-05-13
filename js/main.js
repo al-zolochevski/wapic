@@ -6,7 +6,10 @@ $('.burger').click(function () {
 
 $('.navigation-link').on("click", function (event) {
     menuScrollDown(event);
-    animateBurger();
+    if ($(window).width() < 1023) {
+        animateBurger();
+    }
+
 });
 
 
@@ -27,3 +30,17 @@ $(window).resize(function () {
         $(".navigation-list").removeClass("active");
     }
 });
+
+$(window).scroll(function () {
+    $('.burger').removeClass('open');
+    $(".navigation-list").removeClass("active");
+})
+
+
+//accordion
+if (window.outerWidth < 767) {
+    $('.accordion').on('click', '.heading', function (e) {
+        e.preventDefault();
+        $(this).next('.accordion-panel').not(':animated').slideToggle();
+    });
+}

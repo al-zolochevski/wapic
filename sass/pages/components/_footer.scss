@@ -21,8 +21,12 @@
         display: flex;
         justify-content: space-between;
         padding: 0 0 50px;
+
         @include media("<768px") {
-            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
         }
         @include media("<425px") {
             justify-content: center;
@@ -35,6 +39,14 @@
                 color: #0f5f5c;
                 font-weight: 500;
 
+                .col-2 &, .col-3 & {
+                    @include media("<768px") {
+                        cursor: pointer;
+                        background: #0f5f5c7a;
+                        padding: 6px;
+                        border-radius: 5px;
+                    }
+                }
             }
 
             &.email {
@@ -71,6 +83,9 @@
     .col-1 {
         max-width: 190px;
         margin: 0 25px 0 0;
+        @include media("<768px") {
+            margin: 0 0 20px;
+        }
 
         .footer-logo {
 
@@ -80,11 +95,19 @@
     .col-2 {
         max-width: 65px;
         margin: 0 25px 0 0;
+        @include media("<768px") {
+            margin: 0 0 20px;
+            min-width: 80px;
+        }
     }
 
     .col-3 {
         max-width: 90px;
         margin: 0 25px 0 0;
+        @include media("<768px") {
+            margin: 0 0 20px;
+            min-width: 80px;
+        }
     }
 
     .col-4 {
@@ -153,5 +176,11 @@
                 }
             }
         }
+    }
+}
+
+@include media("<768px") {
+    .accordion-panel {
+        display: none;
     }
 }
